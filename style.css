@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:rgb(0, 0, 0);
+}
+
+header {
+    position: absolute;
+    display: flex;
+    align-items:center;
+    width:100%;
+    height: 26vh;
+    background: rgba(18, 115, 145, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+header nav{
+    display: flex;
+    float: left;
+    position: absolute;
+    left: 6%;
+    padding: 10px;
+    z-index: 1;
+}
+
+header nav ul{
+    display: block;
+    text-align: center;
+    width: 700px;
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header li{
+    display: inline;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header li:hover{
+    color: rgb(170, 221, 30);
+}
+
+.pick{
+    position: absolute;
+    top:10vh;
+    left:70vw;
+    width:250px;
+    height: 250px;
+    border-radius: 200px;
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255,0.1);
+}
+
+
+.text{
+    position: absolute;
+    text-align: center;
+    top:45vh;
+    left:64vw;
+    width:400px;
+    height: 85px;
+    padding: 10px;
+    border-radius: 15px;
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 40px rgba(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255,0.1);
+
+    color: aliceblue;
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+}
+
+.text h1{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.text p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*----about----*/
+.SobreMi{
+    display:block;
+    position:absolute;
+    text-align: center;
+    top: 35vh;
+    left: 14.5%;
+    width:30%;
+    height: 50%;
+    padding: 20px;
+    color: aliceblue;
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 40px rgba(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(1px);
+    opacity: 0;
+}
+
+
+.SobreMi h2{
+    padding-top: 10px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.SobreMi p{
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*----skills----*/
+.habilidades{
+    display:flex;
+    position:absolute;
+    text-align: center;
+    top: 35vh;
+    left: 9.5%;
+    width:40%;
+    height: 50%;
+    padding: 20px;
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255,0.1);
+    box-shadow: 10px 10px 40px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+} 
+
+
+.habilidades .title{
+    position: relative;
+    top: 5%;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 400;
+    color: aliceblue;
+    
+}
+
+/*icons*/
+.habilidades ul li{
+    display: flex;
+    position: relative;
+    left: 10%;
+    margin-bottom:10px ;
+    color: aliceblue;
+    font-size: 45px;
+    text-decoration: none;
+}
+
+/*L*/
+.habilidades .developer{
+    width:100%;
+    height: 100%;
+    
+}
+
+.habilidades .developer ul{
+    display: column;
+    position: relative;
+    top: 12%;
+    
+}
+
+/*R*/
+.habilidades .dataA{
+    width:100%;
+    height: 100%;
+    
+}
+
+.habilidades .dataA ul{
+    display: column;
+    position: relative;
+    top: 12%;
+    
+}
+
+
+
+/*----contacto----*/
+.contactame{
+    display:block;
+    position: absolute;
+    top: 35vh;
+    left: 9.5%;
+    width:40%;
+    height: 40%;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 40px rgba(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+}
+
+.contactame .title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:20%;
+}
+
+.contactame .title h2{
+    height: 100%;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+/*iconos*/
+.contactame .Box-icons{
+    display: flex;
+    float: left;
+    position: absolute;
+    top:25%;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    /* border:1px solid rgb(134, 132, 33); */
+}
+
+.contactame .Box-icons ul{
+    display: block;
+    text-align: center;
+    width: 700px;
+    padding: 20px;
+    text-decoration: none;
+    /* border:1px solid rgb(121, 22, 22); */
+}
+
+.contactame .Box-icons ul li{
+    display: inline;
+    margin: 50px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    cursor: pointer;
+    /* border:1px solid rgb(20, 21, 88); */
+}
+
+.fa-whatsapp{
+    color: green;
+}
+
+.contactame .num{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 45%;
+    width: 100%;
+    height:20%;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 300;
+    opacity: 0;
+    transition: 2s;
+}
+
+/*----cv----*/
+.cv{
+    display:flex;
+    position:absolute;
+    text-align: center;
+    top: 40vh;
+    left: 9.5%;
+    width:40%;
+    height: 18%;
+    padding: 20px;
+    opacity: 0;
+} 
+
+.cv a{
+    display: inline;
+    position: relative;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    margin: 25px;
+    padding: 9px;
+    color: honeydew;
+
+    border-radius: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 40px rgba(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(10px);
+
+    text-decoration: none;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cv a:hover{
+    background: rgba(18, 115, 145, 0.1);
+}
+
+.cv p{
+    font-size: 22px;
+    font-weight: 600;
+}
