@@ -64,7 +64,12 @@ header li:hover {
     border-radius: 200px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    background: rgb(255, 255, 255, 0.1);
+    background: rgb(255, 255, 255, 0.1); 
+    background:url(img/yo.png);
+    background-size: cover;
+    background-position: center; 
+
+
 }
 
 .text {
@@ -105,7 +110,7 @@ header li:hover {
     top: 35vh;
     left: 14.5%;
     width: 30%;
-    height: 50%;
+    height: 40%;
     padding: 20px;
     color: aliceblue;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -122,9 +127,15 @@ header li:hover {
     font-weight: 300;
 }
 
+.SobreMi h3 {
+    padding-top: 11px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .SobreMi p {
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
 }
 
@@ -162,10 +173,10 @@ header li:hover {
 }
 
 .MenuHab h2:hover{
-    color:rgb(95, 8, 8);
+    color:rgb(8, 95, 88);
 }
 
-/*seccion alterna*/
+/*containers A y D*/
 .containerD{
     position: absolute;
     top: 20%;
@@ -256,12 +267,13 @@ header li:hover {
 /*dataA*/
 .containerA{
     position: absolute;
-    top: 20%;
+    top: 29%;
     width: 80%;
     height: 85%;
     padding: 5px;
     opacity: 0;
 }
+
 .containerA .skillsA{
     position: relative;
     display: flex;
@@ -500,7 +512,10 @@ header li:hover {
         border-radius: 200px;
         border-top: 1px solid rgba(255, 255, 255, 0.5);
         border-left: 1px solid rgba(255, 255, 255, 0.5);
-        background: rgb(255, 255, 255, 0.1);
+        background: rgb(255, 255, 255, 0.1); 
+        background:url(img/yo.png);
+        background-size: cover;
+        background-position: center;
     }
     .text {
         position: absolute;
@@ -537,7 +552,7 @@ header li:hover {
         top: 47vh;/**/
         left: 15%;/**/
         width: 70%;/**/
-        height: 45%;/**/
+        height: 40%;/**/
         padding: 10px;/**/
         color: aliceblue;
         border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -567,11 +582,11 @@ header li:hover {
         width: 70%;/**/
         height: 45%;/**/
         padding: 10px;/**/
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
-        border-left: 1px solid rgba(255, 255, 255, 0.5);
-        background: rgb(255, 255, 255, 0.1);
-        box-shadow: 10px 10px 40px rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(10px);
+        border-top: hidden;/**/
+        border-left: hidden;/**/
+        background: none; /**/ 
+        box-shadow: none; /**/
+        backdrop-filter: blur(0.5px);
     }
 
         
@@ -593,7 +608,7 @@ header li:hover {
     }
 
     .MenuHab h2:hover{
-        color:rgb(8, 95, 12);/**/
+        color:rgb(62, 178, 199);/**/
     }
 
     /*seccion alterna*/
@@ -821,7 +836,7 @@ header li:hover {
         color: green;
     }
 
-    .contactame .fa-at{
+    .fa-at{
         font-size: 40px;
         font-weight: 400;
         color:blue;

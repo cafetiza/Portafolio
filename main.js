@@ -6,7 +6,6 @@ const cv = document.querySelector('.cv');
 const numero = document.querySelector('.num');
 const developer = document.querySelector('.containerD');
 const dataA = document.querySelector('.containerA');
-
 const progress = document.querySelectorAll(".progress");
 
 document.querySelector('#about').onclick = function () {
@@ -122,6 +121,7 @@ document.querySelector('#Developer').onclick = function () {
 
 document.querySelector('#DataA').onclick = function () {
     setTimeout(() => {
+        
         developer.style = "opacity: 0; visibility: hidden;";
     }, .005);
 
@@ -138,5 +138,7 @@ document.querySelector('#DataA').onclick = function () {
                             animation: animate 4s ease-in-out forwards;
                             width:90%;`;
     }, 10);
+
+    
 }
 
