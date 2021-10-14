@@ -8,6 +8,12 @@ const developer = document.querySelector('.containerD');
 const dataA = document.querySelector('.containerA');
 const progress = document.querySelectorAll(".progress");
 
+const BtnP = document.querySelector('#Developer');
+const BtnA = document.querySelector('#DataA');
+
+var myVar1,myVar2,myVar3;
+
+/*nav*/
 document.querySelector('#about').onclick = function () {
     setTimeout(function () {
         about.style = "visibility: visible;";
@@ -30,10 +36,26 @@ document.querySelector('#about').onclick = function () {
 }
 
 document.querySelector('#skills').onclick = function () {
+    /*pulsaciones de botones*/
+    myVar1 = setInterval(function(){ 
+        BtnP.style= "color: rgb(30, 221, 164); font-weight: 700;";
+    }, 1000);
+
+    myVar2 = setInterval(function(){ 
+        BtnA.style= "color: rgb(30, 221, 164); font-weight: 700;";
+    }, 1500);
+
+    myVar3 = setInterval(function(){ 
+        BtnP.style= "color:white; font-weight: 500;";
+        BtnA.style= "color:white; font-weight: 500;";
+    }, 6000);
+    
+    /*muestra skills*/
     setTimeout(function () {
         skills.style = "visibility: visible;";
     }, 220);
 
+    /*oculta las otras ventanas*/
     setTimeout(function () {
         about.style = "visibility: hidden;";
         contact.style = "visibility: hidden;";
@@ -65,7 +87,6 @@ document.querySelector('#contact').onclick = function () {
 }
 
 document.querySelector('#cv').onclick = function () {
-
     setTimeout(function () {
         cv.style = "visibility: visible;";
     }, 220);
@@ -88,16 +109,22 @@ document.querySelector('#cv').onclick = function () {
 
 /*Numero*/
 document.querySelector('.fa-whatsapp').onclick = function () {
-    numero.style = "visibility: visible; transition: 4s;";
+    numero.style = "visibility: visible; opacity: 1;";
 }
 
 /*menu Skills*/
-document.querySelector('#Developer').onclick = function () {
+BtnP.onclick = function () {
+    /*detenemos las pulsaciones*/
+    clearInterval(myVar1);
+    clearInterval(myVar2);
+    clearInterval(myVar3);
 
+    /*ocultamos skills data*/
     setTimeout(() => {
         dataA.style = "opacity: 0; visibility: hidden;";
     }, .005);
 
+    /*mostramos skills data*/
     setTimeout(() => {
         developer.style = "opacity: 1; visibility: visible;";
 
@@ -119,7 +146,13 @@ document.querySelector('#Developer').onclick = function () {
     }, 10);
 }
 
-document.querySelector('#DataA').onclick = function () {
+BtnA.onclick = function () {
+    
+    clearInterval(myVar1);
+    clearInterval(myVar2);
+    clearInterval(myVar3);
+
+    
     setTimeout(() => {
         
         developer.style = "opacity: 0; visibility: hidden;";
