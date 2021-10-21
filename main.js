@@ -3,6 +3,7 @@ const about = document.querySelector('.SobreMi');
 const skills = document.querySelector('.habilidades');
 const contact = document.querySelector('.contactame');
 const cv = document.querySelector('.cv');
+const proyect = document.querySelector('.proyectos');
 const numero = document.querySelector('.num');
 const developer = document.querySelector('.containerD');
 const dataA = document.querySelector('.containerA');
@@ -21,8 +22,10 @@ document.querySelector('#about').onclick = function () {
 
     setTimeout(function () {
         skills.style = "visibility: hidden; ";
+        proyect.style = "visibility: hidden;";
         contact.style = "visibility: hidden;";
         cv.style = "visibility: hidden;";
+
         numero.style = "visibility: hidden;";
         developer.style = "visibility: hidden;";
         dataA.style = "visibility: hidden;";
@@ -58,11 +61,36 @@ document.querySelector('#skills').onclick = function () {
     /*oculta las otras ventanas*/
     setTimeout(function () {
         about.style = "visibility: hidden;";
+        proyect.style = "visibility: hidden;";
         contact.style = "visibility: hidden;";
         cv.style = "visibility: hidden;";
+        
         numero.style = "visibility: hidden;";
     }, 200);
 
+}
+
+document.querySelector('#proyectos').onclick = function () {
+    setTimeout(function () {
+        proyect.style = "visibility: visible;";
+    }, 220);
+
+    setTimeout(function () {
+        about.style = "visibility: hidden;";
+        skills.style = "visibility: hidden;";
+        contact.style = "visibility: hidden;";
+        cv.style = "visibility: hidden;";
+        
+        numero.style = "visibility: hidden;";
+        developer.style = "visibility: hidden;";
+        dataA.style = "visibility: hidden;";
+    }, 200);
+
+    setTimeout(() => {
+        dataA.style = "opacity: 0;";
+        developer.style = "opacity: 0;";
+        skills.style = "visibility: hidden;";
+    }, .005);
 }
 
 document.querySelector('#contact').onclick = function () {
@@ -71,9 +99,11 @@ document.querySelector('#contact').onclick = function () {
     }, 220);
 
     setTimeout(function () {
-        cv.style = "visibility: hidden;";
-        skills.style = "visibility: hidden;";
         about.style = "visibility: hidden;";
+        skills.style = "visibility: hidden;";
+        proyect.style = "visibility: hidden;";
+        cv.style = "visibility: hidden;";
+
         numero.style = "visibility: hidden;";
         developer.style = "visibility: hidden;";
         dataA.style = "visibility: hidden;";
@@ -92,9 +122,11 @@ document.querySelector('#cv').onclick = function () {
     }, 220);
 
     setTimeout(function () {
-        contact.style = "visibility: hidden;";
-        skills.style = "visibility: hidden;";
         about.style = "visibility: hidden;";
+        skills.style = "visibility: hidden;";
+        proyect.style = "visibility: hidden;";
+        contact.style = "visibility: hidden;";
+
         numero.style = "visibility: hidden;";
         developer.style = "visibility: hidden;";
         dataA.style = "visibility: hidden;";
