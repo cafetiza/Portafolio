@@ -75,8 +75,8 @@ header li:hover {
 .text {
     position: absolute;
     text-align: center;
-    top: 45vh;
-    left: 64vw;
+    top: 50%;
+    left:65%;
     width: 400px;
     height: 85px;
     padding: 10px;
@@ -101,7 +101,10 @@ header li:hover {
 .text p {
     font-size: 15px;
     font-weight: 600;
+    
 }
+
+
 
 /*--------about--------*/
 .SobreMi {
