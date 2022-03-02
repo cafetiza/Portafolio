@@ -388,10 +388,11 @@ header li:hover {
     justify-content: center;
     left: 40%;
     width: 23%;
-    color: #fff;
-    background: rgb(99, 38, 38);
-    border: 2px solid rgb(0,0,0);
-    box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.5);
+    color: aliceblue;
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50px; 
     cursor: pointer;
 }
@@ -399,7 +400,9 @@ header li:hover {
 .proyectos .info:hover{
     width: 22%;
     background: rgb(99, 38, 38);
-    box-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 
