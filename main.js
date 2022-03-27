@@ -175,6 +175,9 @@ BtnP.onclick = function () {
         progress[4].style = `background: linear-gradient(45deg, #1fe6ff,#673AB7); 
                             animation: animate 4s ease-in-out forwards;
                             width:85%;`;
+        progress[5].style = `background: linear-gradient(45deg, #1fe6ff,#673AB7); 
+                            animation: animate 4s ease-in-out forwards;
+                            width:75%;`;
     }, 10);
 }
 
@@ -193,13 +196,13 @@ BtnA.onclick = function () {
     setTimeout(() => {
         dataA.style = "opacity: 1; visibility: visible;";
 
-        progress[5].style = `background: linear-gradient(45deg, #a9ff1f,#b73a3a); 
-                            animation: animate 4s ease-in-out forwards;
-                            width:70%;`;
         progress[6].style = `background: linear-gradient(45deg, #a9ff1f,#b73a3a); 
                             animation: animate 4s ease-in-out forwards;
                             width:70%;`;
         progress[7].style = `background: linear-gradient(45deg, #a9ff1f,#b73a3a); 
+                            animation: animate 4s ease-in-out forwards;
+                            width:70%;`;
+        progress[8].style = `background: linear-gradient(45deg, #a9ff1f,#b73a3a); 
                             animation: animate 4s ease-in-out forwards;
                             width:90%;`;
     }, 10);
