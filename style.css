@@ -55,6 +55,11 @@ header li:hover {
     color: rgb(170, 221, 30);
 }
 
+header li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
 .pick {
     position: absolute;
     top: 10vh;

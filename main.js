@@ -12,7 +12,32 @@ const progress = document.querySelectorAll(".progress");
 const BtnP = document.querySelector('#Developer');
 const BtnA = document.querySelector('#DataA');
 
-var myVar1,myVar2,myVar3;
+const V3 = document.querySelector('#V3');
+
+var myVar1, myVar2, myVar3;
+
+/* redireccion a version 3 */
+v3 = setInterval(() => {
+    var resultado = window.confirm('Existe una una version de mi CV');
+    if (resultado === true) {
+        window.alert('¿Quieres ir allá?');
+        location.href = "http://johnruiz.epizy.com";
+    }else { 
+        window.alert('Continuar aquí');
+        clearInterval(v3);
+    }
+}, 30000);
+
+/* btn version 3 */
+setInterval(function () {
+    V3.style = "color: rgb(209, 41, 41); font-weight: 700;";
+}, 1000);
+
+setInterval(function () {
+    V3.style = "color: rgb(250, 250, 250); font-weight: 500;";
+}, 1500);
+
+
 
 /*nav*/
 document.querySelector('#about').onclick = function () {
@@ -40,19 +65,19 @@ document.querySelector('#about').onclick = function () {
 
 document.querySelector('#skills').onclick = function () {
     /*pulsaciones de botones*/
-    myVar1 = setInterval(function(){ 
-        BtnP.style= "color: rgb(30, 221, 164); font-weight: 700;";
+    myVar1 = setInterval(function () {
+        BtnP.style = "color: rgb(30, 221, 164); font-weight: 700;";
     }, 1000);
 
-    myVar2 = setInterval(function(){ 
-        BtnA.style= "color: rgb(30, 221, 164); font-weight: 700;";
+    myVar2 = setInterval(function () {
+        BtnA.style = "color: rgb(30, 221, 164); font-weight: 700;";
     }, 1500);
 
-    myVar3 = setInterval(function(){ 
-        BtnP.style= "color:white; font-weight: 500;";
-        BtnA.style= "color:white; font-weight: 500;";
+    myVar3 = setInterval(function () {
+        BtnP.style = "color:white; font-weight: 500;";
+        BtnA.style = "color:white; font-weight: 500;";
     }, 6000);
-    
+
     /*muestra skills*/
     setTimeout(function () {
         skills.style = "visibility: visible;";
@@ -64,7 +89,7 @@ document.querySelector('#skills').onclick = function () {
         proyect.style = "visibility: hidden;";
         contact.style = "visibility: hidden;";
         cv.style = "visibility: hidden;";
-        
+
         numero.style = "visibility: hidden;";
     }, 200);
 
@@ -80,7 +105,7 @@ document.querySelector('#proyectos').onclick = function () {
         skills.style = "visibility: hidden;";
         contact.style = "visibility: hidden;";
         cv.style = "visibility: hidden;";
-        
+
         numero.style = "visibility: hidden;";
         developer.style = "visibility: hidden;";
         dataA.style = "visibility: hidden;";
@@ -182,14 +207,14 @@ BtnP.onclick = function () {
 }
 
 BtnA.onclick = function () {
-    
+
     clearInterval(myVar1);
     clearInterval(myVar2);
     clearInterval(myVar3);
 
-    
+
     setTimeout(() => {
-        
+
         developer.style = "opacity: 0; visibility: hidden;";
     }, .005);
 
@@ -206,42 +231,40 @@ BtnA.onclick = function () {
                             animation: animate 4s ease-in-out forwards;
                             width:90%;`;
     }, 10);
-
-    
 }
 
 //popup´s//
-/*CARFT CIRLI*/ 
+/*CARFT CIRLI*/
 var btnAbrirPopup = document.getElementById("btn-abrir-popup"),
     overlay = document.getElementById("overlay"),
     popup = document.getElementById("popup"),
     btnCerrarPopup = document.getElementById("btn-cerrar-popup");
 
 
-btnAbrirPopup.addEventListener("click",function () {
+btnAbrirPopup.addEventListener("click", function () {
     overlay.classList.add('active');
     popup.classList.add('active');
 });
 
-btnCerrarPopup.addEventListener("click",function () {
+btnCerrarPopup.addEventListener("click", function () {
     overlay.classList.remove('active');
     popup.classList.remove('active');
 });
 
 
-/*Random image*/ 
+/*Random image*/
 var btnAbrirPopup2 = document.getElementById("btn-abrir-popup2"),
     overlay2 = document.getElementById("overlay2"),
     popup2 = document.getElementById("popup2"),
     btnCerrarPopup2 = document.getElementById("btn-cerrar-popup2");
 
 
-btnAbrirPopup2.addEventListener("click",function () {
+btnAbrirPopup2.addEventListener("click", function () {
     overlay2.classList.add('active');
     popup2.classList.add('active');
 });
 
-btnCerrarPopup2.addEventListener("click",function () {
+btnCerrarPopup2.addEventListener("click", function () {
     overlay2.classList.remove('active');
     popup2.classList.remove('active');
 });
@@ -253,12 +276,12 @@ var btnAbrirPopup3 = document.getElementById("btn-abrir-popup3"),
     btnCerrarPopup3 = document.getElementById("btn-cerrar-popup3");
 
 
-btnAbrirPopup3.addEventListener("click",function () {
+btnAbrirPopup3.addEventListener("click", function () {
     overlay3.classList.add('active');
     popup3.classList.add('active');
 });
 
-btnCerrarPopup3.addEventListener("click",function () {
+btnCerrarPopup3.addEventListener("click", function () {
     overlay3.classList.remove('active');
     popup3.classList.remove('active');
 });
